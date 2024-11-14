@@ -1,5 +1,2 @@
-# Ignorar a pasta node_modules
-node_modules/
-
-# Ignorar arquivos de configuração do ambiente
-.env
+/Backend/node_modules
+vigillatus/node_modules/
