@@ -6,15 +6,16 @@ const GlobalStyle = createGlobalStyle`
 
 export const Container = styled.div`
     background-color: #E5E5E5;
-    width: 100vw;
-    height: 1080px;
-    padding: 0px 0 0 90px;
+    margin-top: 100px;
+    margin-left: 90px; 
+    width: calc(100% - 90px); 
+    height: calc(150% - 100px); 
     position: absolute;
-    z-index: 1; 
+    z-index: 1;
 `
 
 export const DivCard= styled.div`
-    margin-top:50px;
+    margin-top:3%;
     height:72%;
 `
 
@@ -26,19 +27,19 @@ export const Titulo = styled.h1`
 `
 
 export const DivFlex = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px; 
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; 
+  justify-content: center;
 `
 
 export const CardContainer = styled.div`
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items:center;
     width:100%;
-    height:100px;
-    padding:8px 0px 0 0px;
+    height:25%;
+    flex-direction: column;  
 `
 
 export const StyledVoltar = styled.img`

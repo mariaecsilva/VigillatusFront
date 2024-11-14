@@ -3,16 +3,17 @@ import styled from 'styled-components';
 export const StyledSidebar = styled.div`
     background-color: #FFFFFF;
     width: 90px;
-    height: calc(100vh - 100px); /* Ajusta a altura da sidebar para ocupar o restante da tela */
+    height: calc(100vh - 100px); 
     transition: width 0.0001s ease-in-out;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
-    position: fixed; /* Fixa a sidebar na tela */
-    top: 100px; /* Coloca a sidebar abaixo da navbar */
-    left: 0; /* Posiciona a sidebar à esquerda */
-    z-index: 10; /* Garante que a sidebar fique abaixo da navbar */
+    position: fixed; 
+    top: 100px; 
+    left: 0; 
+    z-index: 10; 
 
     &:hover {
         width: 273px;
+        margin:0;
     }
 
     &:hover .sidebar-text {
@@ -31,13 +32,13 @@ export const StyledButtonSidebar = styled.button`
     border: none;
     color: white;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     position: relative; 
 
     &:hover {
         height: 100%; 
         width: 4px; 
-        background-color: #333333; 
+        background-color: #333333;
     }
 
     &:hover::before {
@@ -47,7 +48,7 @@ export const StyledButtonSidebar = styled.button`
         top: 0;
         height: 100%; 
         width: 4px; 
-        background-color: #333333; 
+        background-color: #333333;
     }
 
     &.active::before {
@@ -62,8 +63,8 @@ export const StyledButtonSidebar = styled.button`
 `;
 
 export const ButtonContainer = styled.div`
+    padding-top: 50px;
     flex-direction: column;
-    padding-top: 49px;
 
     &:hover {
         align-items: start;
@@ -72,7 +73,7 @@ export const ButtonContainer = styled.div`
 `;
 
 export const DivLogout = styled.div`
-    margin-top: 500px;
+    margin-top:30%;
 `;
 
 export const StyledSpanSidebar = styled.span`

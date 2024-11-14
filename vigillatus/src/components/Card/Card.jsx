@@ -8,7 +8,6 @@ export default function Card({ children }) {
 
     return (
         <DivCard className={isActive ? 'active' : ''}>
-            <Linha />
             {children}
         </DivCard>
     );

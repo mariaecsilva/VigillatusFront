@@ -15,7 +15,7 @@ export const Container = styled.div`
 `;
 
 export const DivCard= styled.div`
-    margin-top:50px;
+    margin-top:3%;
     height:72%;
 `
 
@@ -38,8 +38,8 @@ export const CardContainer = styled.div`
     justify-content: center;
     align-items:center;
     width:100%;
-    height:100px;
-    padding:8px 20px 0 30px;
+    height:25%;
+    flex-direction: column;  
 `
 
 export const Setor = styled.h2`
@@ -47,30 +47,27 @@ export const Setor = styled.h2`
     font-size: 35px;
     font-weight: bold; 
     color:#FFFFFF;
-
+    margin-bottom:3%;
 `
 
 export const DivConteudo = styled.div`
-    width:500px;
-    height:220px;
+    width:100%;
+    height:65%;
     display: flex;
-    justify-content: space-between;
-    align-items:center;
+    justify-content: center;
+    padding:3%;
+    color:#FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     
 
       h2 {
-        color:#FFFFFF;
-        font-family: 'Roboto', sans-serif;
         font-size: 25px;
-        font-weight: bold; 
         margin: 0;
     }
 
     p {
-        color:#FFFFFF;
-        font-family: 'Roboto', sans-serif;
         font-size: 25px;
-        font-weight: bold; 
         margin: 0;
     }
 `
@@ -78,21 +75,22 @@ export const DivConteudo = styled.div`
 export const DivTexto = styled.div`
     display: flex;
     flex-direction: column;  
-    gap: 20px;  
-    height: 100%;
+    gap: 10%;  
     text-align:center;
     align-items:center;
-    padding-top:20px;
+    justify-content:center;
+    width:50%;
 `
 
 export const ImagemCard = styled.img`
-    width:220px;
-    height:220px;
+    width:35%;
+    height:auto;
+    width:40%;
 `
 
 export const ButtonVerMais = styled.button`
-    width:201px;
-    height:39px;
+    width:60%;
+    height:20%;
     background-color:#A29F9F;
     color: white;
     border: none;
@@ -108,6 +106,13 @@ export const ButtonVerMais = styled.button`
         background-color: #7F7F7F; 
     }
 `
+
+export const Linha = styled.div`
+    border: none;
+    background-color: #E5E5E5;
+    border-bottom: 3px solid #B5B5B5; 
+    width: 95%; 
+`;
 
 
 export const DivOcorrencia = styled.div`

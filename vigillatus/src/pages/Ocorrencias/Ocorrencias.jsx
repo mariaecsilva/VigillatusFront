@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar"
 import Sidebar from "../../components/Sidebar/Sidebar"
 import Card from "../../components/Card/Card"
 import ImagemExemplo from "../../image/teste/imgExemplo.png"
-import { DivCard, Container, DivFlex, Titulo, CardContainer, Setor, DivConteudo, ImagemCard, ButtonVerMais, DivTexto } from "./Style"
+import { DivCard, Container, DivFlex, Titulo, CardContainer, Setor, DivConteudo, ImagemCard, ButtonVerMais, DivTexto, Linha } from "./Style"
 import SubNavbar from "../../components/SubNavbar/SubNavbar.jsx"
 import Paginacao from "../../components/Paginacao/Paginacao.jsx"
 
@@ -26,7 +26,7 @@ export default function Ocorrencias() {
     useEffect(() => {
         const fetchOcorrencias = async () => {
             try {
-                const response = await fetch("https://run.mocky.io/v3/85619f74-aebd-42ae-846d-13ac1807277c");
+                const response = await fetch("https://run.mocky.io/v3/0683e03d-e8b6-4beb-b1a6-3087afdd6d6f");
                 const data = await response.json();
                 setDadosOcorrencias(data.cardsExibir); 
             } catch (error) {
@@ -50,6 +50,7 @@ export default function Ocorrencias() {
                                 <div>
                                     <CardContainer>
                                         <Setor>{card.setor}</Setor>
+                                        <Linha/>
                                     </CardContainer>
                                     <DivConteudo>
                                         <ImagemCard src={ImagemExemplo} alt="" />

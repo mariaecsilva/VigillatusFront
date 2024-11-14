@@ -17,11 +17,3 @@ export const DivCard = styled.div`
     }
 `;
 
-export const Linha = styled.hr`
-    border: none;
-    border-top: 2px solid #B5B5B5; 
-    position: absolute;
-    top: 87px; 
-    width: 90%; 
-    z-index: 10; 
-`;
