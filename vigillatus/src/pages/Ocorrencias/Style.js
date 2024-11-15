@@ -16,7 +16,7 @@ export const Container = styled.div`
 
 export const DivCard= styled.div`
     margin-top:3%;
-    height:72%;
+    height:75%;
 `
 
 export const Titulo = styled.h1`
@@ -51,16 +51,15 @@ export const Setor = styled.h2`
 `
 
 export const DivConteudo = styled.div`
-    width:100%;
     height:65%;
     display: flex;
     justify-content: center;
+    align-items:center;
     padding:3%;
     color:#FFFFFF;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     
-
       h2 {
         font-size: 25px;
         margin: 0;
@@ -75,7 +74,7 @@ export const DivConteudo = styled.div`
 export const DivTexto = styled.div`
     display: flex;
     flex-direction: column;  
-    gap: 10%;  
+    gap: 20px;  
     text-align:center;
     align-items:center;
     justify-content:center;

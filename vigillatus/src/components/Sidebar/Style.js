@@ -36,7 +36,6 @@ export const StyledButtonSidebar = styled.button`
     position: relative; 
 
     &:hover {
-        height: 100%; 
         width: 4px; 
         background-color: #333333;
     }
@@ -63,17 +62,20 @@ export const StyledButtonSidebar = styled.button`
 `;
 
 export const ButtonContainer = styled.div`
-    padding-top: 50px;
+    display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 50px;
 
     &:hover {
         align-items: start;
-        flex-direction: row;
     }
 `;
 
 export const DivLogout = styled.div`
-    margin-top:30%;
+    margin-top: auto;
+    margin-bottom: 40px;
 `;
 
 export const StyledSpanSidebar = styled.span`

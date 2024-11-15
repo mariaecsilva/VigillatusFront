@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
-import { Linha, DivFlex, DivRota, UlRota, LiRota, LinkRota, Arrow } from './Style.js';
+import { Linha, DivFlex, UlRota, LiRota, LinkRota, Arrow } from './Style.js';
 
 export default function TrilhaDeNavegacao() {
     const location = useLocation(); // Obtém a localização atual (a URL ativa)
@@ -30,7 +30,8 @@ export default function TrilhaDeNavegacao() {
 
     return (
         <DivFlex>
-            <DivRota className="trilha">
+            <div className="trilha">
+                <Linha>
                 {trilha.length > 0 && ( // Verifica se há itens na trilha
                     <UlRota>
                         {trilha.map((item, index) => (
@@ -40,8 +41,8 @@ export default function TrilhaDeNavegacao() {
                         ))}
                     </UlRota>
                 )}
-            </DivRota>
-            <Linha />
+                </Linha>
+            </div>
         </DivFlex>
     );
 }

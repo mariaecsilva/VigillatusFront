@@ -21,7 +21,7 @@ export const DivCard= styled.div`
 
 export const Titulo = styled.h1`
     font-family: 'Roboto', sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: bold; 
     margin-left: 100px;
 `
@@ -33,41 +33,53 @@ export const DivFlex = styled.div`
   justify-content: center;
 `
 
-export const CardContainer = styled.div`
+export const CardTitulo = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items:center;
     width:100%;
-    height:25%;
-    flex-direction: column;  
+    height:25%; 
 `
-
 export const StyledVoltar = styled.img`
-    width: 50px;
+    width: 30px;
     cursor: pointer; 
 `
+
 export const Setor = styled.h2`
     font-family: 'Roboto', sans-serif;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold; 
     color:#FFFFFF;
+    margin-bottom:3%;
 
 `
 
 export const ImageCard = styled.img`
-    width: 190px
-    height: 190px;
+    height:auto;
+    width:40%;
 `
 
 export const DivImage = styled.div`
-    height: 100px;
+    height: 50%;
     width:100%;
     display:flex;
     align-items:center;
-    justify-content: space-between;
+    justify-content: space-around;
     
 `
 
 export const DivConteudo = styled.div`
 
+`
+
+export const Linha = styled.div`
+    border: none;
+    background-color: #E5E5E5;
+    border-bottom: 3px solid #B5B5B5; 
+    width: 95%; 
+`;
+
+export const DivContainer = styled.div`
+    width:100%;
+    align-items:center;
 `

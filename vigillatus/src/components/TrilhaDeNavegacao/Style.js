@@ -10,22 +10,19 @@ export const DivFlex = styled.div`
    padding-left:100px;
 `;
 
-export const Linha = styled.hr`
+export const Linha = styled.div`
     border: none;
-    border-top: 3px solid #B5B5B5; 
-    position: absolute;
-    top: 177px; 
-    width: 80%; 
+    background-color: #E5E5E5;
+    border-bottom: 3px solid #B5B5B5; 
+    width: 95%; 
 `;
 
-export const DivRota = styled.div`
-    
-`;
 
 export const UlRota = styled.ul`
-    padding:0;
+   padding: 0;
     display: flex;
     flex-direction: row;
+    margin-bottom:0;
 `;
 
 export const LiRota = styled.li`

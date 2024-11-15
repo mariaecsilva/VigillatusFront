@@ -1,15 +1,16 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background-color: #e5e5e5;
-  width: 100vw;
-  height: 1080px;
-  padding: 0 0 0 90px;
-  position: absolute;
-  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center; 
+  background-color: #E5E5E5;
+  margin-top: 100px;
+  margin-left: 90px; 
+  width: calc(100% - 90px); 
+  height: calc(150% - 100px); 
+  position: absolute;
+  z-index: 1;
 `;
 
 export const ButtonSair = styled.div`
@@ -18,24 +19,24 @@ export const ButtonSair = styled.div`
 `;
 
 export const DivOcorrencia = styled.div`
-  width: 1700px;
-  height: 300px;
+  width: 80%;
+  height: 35%;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
-  margin-top: 400px;
 `;
 
 export const Titulo = styled.h1`
-  font-family: "Roboto", sans-serif;
-  font-size: 60px;
-  font-weight: bold;
-  margin-left:100px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: bold; 
+  margin-left: 7%;
+  height:50%;
 `;
 
 export const BarraTitulo = styled.div`
-  width: 1290px;
+  width: 100%;
   height: 55px;
   background-color: #333333;
   border-radius: 20px 20px 0 0;
@@ -53,13 +54,13 @@ export const BarraTitulo = styled.div`
 `;
 
 export const Section = styled.div`
-  width: 1290px;
-  height: 720px;
+  width: 100%;
+  height: auto;
   background-color: #ffffff;
   border-radius: 0 0 20px 20px;
   display: flex;
   align-items: center;
-  margin-bottom: 350px;
+  justify-content:center;
 `;
 
 export const DivImagem = styled.div`
@@ -76,7 +77,7 @@ export const DivImagem = styled.div`
 
 export const DivDados = styled.div`
   width: 60%;
-  height: 650px;
+  height: auto;
 `;
 
 export const ImageOcorrencia = styled.img`
@@ -212,6 +213,5 @@ export const DivInputsSelect = styled.div`
 
 export const DivTitulo = styled.div`
   width:100%;
-  display flex;
-  align-items:start;
+  height:30%;
 `
